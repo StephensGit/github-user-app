@@ -24,14 +24,14 @@
     font-size: 13px;
     font-weight: 400;
     color: var(--blue-gray);
-    max-width: 375px;
     margin: 0 auto;
   }
 
   .grid-container {
     margin: 0 auto 0 auto;
     /* text-align: center; */
-    min-width: 375px;
+    /* max-width: 375px; */
+    min-width: 365px;
   }
 
   .wrapper {
