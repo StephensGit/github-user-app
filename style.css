@@ -14,22 +14,33 @@
     --dark-blue: #4B6A9B;
     --light-black: #2B3442;
     --light-gray: #F6F8FF;
+    --very-light-gray: rgba(105, 124, 154, 0.02); 
     --white: #FEFEFE;
   }
 
   body {
     font-family: var(--main-font);
     background: var(--light-gray);
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--blue-gray);
   }
 
   .grid-container {
     margin: 0 auto 0 auto;
-    text-align: center;
+    /* text-align: center; */
     min-width: 375px;
   }
 
   .wrapper {
     padding: 20px;
+  }
+
+  form, section {
+      /* box-shadow: 0 10px var(--very-light-gray); */
+      /* box-shadow: var(--very-light-gray) 0px 5px 15px; */
+      box-shadow: rgba(105, 124, 154, 0.2) 0px 3px 8px;
+      /* box-shadow: rgba(43, 52, 66, 0.019) 0px 5px 0px; */
   }
 
   .flex-row {
@@ -52,13 +63,17 @@
       height: 20px;
   }
 
-  .grid-container div:first-child {
-      padding-bottom: 10px;
+  .grid-container > div:first-child {
+      padding-bottom: 20px;
   }
+
+  .grid-container > div:nth-child(2) {
+    padding-bottom: 0;
+}
 
   form, section {
     background: var(--white);
-    padding: 20px;
+    padding: 5px;
   }
   form, section, .repo-info {
     border-radius: 15px;
@@ -67,6 +82,7 @@
   h1, h2 {
     font-weight: 700;
     font-family: var(--main-font);
+    color: var(--light-black);
   }
 
   h1 {
@@ -79,22 +95,13 @@
     line-height: 33px;
   }
 
-  h3, h4, p {
-    font-weight: 400;
-  }
-
   h3 {
     font-size: 16px;
+    font-weight: 700;
     line-height: 24px;
   }
 
-  h3 {
-    font-size: 13px;
-    line-height: 20px;
-  }
-
-  p {
-    font-size: 15px;
+  h4, p {
     line-height: 25px;
   }
 
@@ -115,15 +122,20 @@ form {
 .search-icon {
     height: 20px;
     width: 20px;
+    margin-left: 10px;
 }
 
 input {
     border: none;
+    width: 200px;
 }
 
 input::placeholder {
-    font-size: 13px;
+    font-size: 12px;
+    font-family: var(--main-font);
+    line-height: 25px;
     color: var(--blue-gray);
+    letter-spacing: 0;
 }
 
 form button {
@@ -134,4 +146,59 @@ form button {
     height: 46px;
     font-size: 14px;
     width: 84px;
+    font-family: var(--main-font);
+    margin: 5px 5px 5px 0;
 }
+
+/* Section Header */
+section {
+    padding: 20px;
+}
+section .header .flex-column > .user-handle {
+    color: var(--blue)
+}
+
+section .header .flex-column > .date {
+    color: var(--blue-gray)
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Section Body */
+.repo-info {
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+.repo-info > div > p {
+    font-size: 11px;
+}
+
+.repo-info > div > span {
+    color: var(--light-black);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.flex-column > span {
+    align-self: center;
+}
+
+/* Footer */
+section .footer {
+    margin-top: 20px;
+}
+
+.footer .flex-column > .flex-row {
+    align-content: center;
+}
+
+.footer .flex-column > .flex-row li {
+    margin: 0 0 20px 20px;
+}
+
