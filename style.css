@@ -24,6 +24,8 @@
     font-size: 13px;
     font-weight: 400;
     color: var(--blue-gray);
+    max-width: 375px;
+    margin: 0 auto;
   }
 
   .grid-container {
