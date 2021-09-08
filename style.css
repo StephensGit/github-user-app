@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --main-font: 'Space Mono', monospace;
+    --font-size: 15px;
+    --blue: #0079FF;
+    --blue-gray: #697C9A;
+    --dark-blue: #4B6A9B;
+    --light-black: #2B3442;
+    --light-gray: #F6F8FF;
+    --white: #FEFEFE;
+  }
+
+  body {
+    font-family: var(--main-font);
+    background: var(--light-gray);
+  }
+
+  .grid-container {
+    margin: 0 auto 0 auto;
+    text-align: center;
+    min-width: 375px;
+  }
+
+  .wrapper {
+    padding: 20px;
+  }
+
+  .flex-row {
+    display: flex;
+  }
+
+  nav {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .light-toggle {
+    text-transform: uppercase;
+    color: var(--blue-gray);
+  }
+
+  .light-toggle-icon {
+      margin-left: 20px;
+      width: 20px;
+      height: 20px;
+  }
+
+  .grid-container div:first-child {
+      padding-bottom: 10px;
+  }
+
+  form, section {
+    background: var(--white);
+    padding: 20px;
+  }
+  form, section, .repo-info {
+    border-radius: 15px;
+  }
+
+  h1, h2 {
+    font-weight: 700;
+    font-family: var(--main-font);
+  }
+
+  h1 {
+    font-size: 26px;
+    line-height: 38px;
+  }
+
+  h2 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  h3, h4, p {
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  h3 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .repo-info {
+    background: var(--light-gray);
+  }
+
+  .footer ul {
+    list-style-type: none;
+  }
+
+/* FORM */
+form {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-icon {
+    height: 20px;
+    width: 20px;
+}
+
+input {
+    border: none;
+}
+
+input::placeholder {
+    font-size: 13px;
+    color: var(--blue-gray);
+}
+
+form button {
+    background: var(--blue);
+    border: none;
+    border-radius: 10px;
+    color: var(--white);
+    height: 46px;
+    font-size: 14px;
+    width: 84px;
+}
