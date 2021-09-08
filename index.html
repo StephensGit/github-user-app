@@ -5,24 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | GitHub user search app</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Stephen Moran | GitHub user search app</title>
 </head>
 <body>
+  <div class="grid-container">
+    <div class="wrapper">
+      <nav class="flex-row">
+        devfinder
+  
+        Light
+        Dark
+        <img src="./assets/icon-moon.svg" alt="moon-icon">
+      </nav>
+    </div>
 
-  devfinder
+    <div class="wrapper">
+      <form class="flex-row" action="">
+        <img src="./assets/icon-search.svg" alt="search-icon">
+        
+        <input placeholder="Search GitHub username..." type="search" name="" id="">
+        <button>Search</button>
+      </form>
+    </div>
 
-  Light
-  Dark
-
-  Search GitHub username...
-  Search
-
-  Joined
-
-  Repos
-  Followers
-  Following
-
+    <div class="wrapper">
+      <section>
+        <div class="header flex-row">
+          <img src="" alt="">
+          <div class="flex-column">
+            <h2>The Octocat</h2>
+            <a href="#"></a>
+            <p>Joined 25 Jan 2011</p>
+          </div>
+        </div>
+        <div class="body-text">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam amet consequuntur dicta saepe asperiores sequi!</p>
+          <div class="repo-info flex-row">
+            <div class="flex-column">
+              <p>Repos</p>
+              <span>8</span> 
+            </div>
+            <div class="flex-column">
+              <p>Followers</p>
+              <span>8</span> 
+            </div>
+            <div class="flex-column">
+              <p>Following</p>
+              <span>8</span> 
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <ul>
+            <li><a href="#"><img src="/assets/icon-location.svg" alt=""></a>San Francisco</li>
+            <li><a href=""><img src="./assets/icon-website.svg" alt=""></a>https://github.blog</li>
+            <li><a href=""><img src="./assets/icon-twitter.svg" alt=""></a> Twiiter</li>
+            <li><a href=""><img src="./assets/icon-company.svg" alt=""></a>@github</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
