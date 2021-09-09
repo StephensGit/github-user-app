@@ -10,27 +10,35 @@
     --main-font: 'Space Mono', monospace;
     --font-size: 15px;
     --blue: #0079FF;
-    --blue-gray: #697C9A;
+    --main-font-color: #697C9A;
     --dark-blue: #4B6A9B;
-    --light-black: #2B3442;
-    --light-gray: #F6F8FF;
+    --h1-color: #2B3442;
+    --main-bg: #F6F8FF;
     --very-light-gray: rgba(105, 124, 154, 0.02); 
-    --white: #FEFEFE;
+    --secondary-bg: #FEFEFE;
+    --button-col: #FEFEFE;
+    --input-col: #697C9A;
   }
+
+  .dark_mode{
+    --main-bg: rgb(20, 29, 47);
+    --secondary-bg: #1E2A47;
+    --main-font-color: #FEFEFE;
+    --h1-color: #FEFEFE;
+    --input-col: #FEFEFE;
+}
 
   body {
     font-family: var(--main-font);
-    background: var(--light-gray);
+    background: var(--main-bg);
     font-size: 13px;
     font-weight: 400;
-    color: var(--blue-gray);
+    color: var(--main-font-color);
     margin: 0 auto;
   }
 
   .grid-container {
     margin: 0 auto 0 auto;
-    /* text-align: center; */
-    /* max-width: 375px; */
     min-width: 365px;
   }
 
@@ -54,9 +62,15 @@
     align-items: center;
   }
 
+  #theme_toggler {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+  }
+
   .light-toggle {
     text-transform: uppercase;
-    color: var(--blue-gray);
+    color: var(--main-font-color);
   }
 
   .light-toggle-icon {
@@ -74,7 +88,7 @@
 }
 
   form, section {
-    background: var(--white);
+    background: var(--secondary-bg);
     padding: 5px;
   }
   form, section, .repo-info {
@@ -84,7 +98,7 @@
   h1, h2 {
     font-weight: 700;
     font-family: var(--main-font);
-    color: var(--light-black);
+    color: var(--h1-color);
   }
 
   h1 {
@@ -108,7 +122,7 @@
   }
 
   .repo-info {
-    background: var(--light-gray);
+    background: var(--main-bg);
   }
 
   .footer ul {
@@ -130,13 +144,19 @@ form {
 input {
     border: none;
     width: 200px;
+    background: transparent;
+    color: var(--input-col);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }
 
 input::placeholder {
     font-size: 12px;
     font-family: var(--main-font);
     line-height: 25px;
-    color: var(--blue-gray);
+    color: var(--input-col);
     letter-spacing: 0;
 }
 
@@ -144,7 +164,7 @@ form button {
     background: var(--blue);
     border: none;
     border-radius: 10px;
-    color: var(--white);
+    color: var(--button-col);
     height: 46px;
     font-size: 14px;
     width: 84px;
@@ -161,7 +181,7 @@ section .header .flex-column > .user-handle {
 }
 
 section .header .flex-column > .date {
-    color: var(--blue-gray)
+    color: var(--main-font-color)
 }
 
 .flex-column {
@@ -181,8 +201,12 @@ section .header .flex-column > .date {
     font-size: 11px;
 }
 
+.body-text p {
+    margin-top: 30px;
+}
+
 .repo-info > div > span {
-    color: var(--light-black);
+    color: var(--h1-color);
     font-size: 16px;
     font-weight: 700;
 }
