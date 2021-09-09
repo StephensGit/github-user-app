@@ -201,7 +201,7 @@ section .header .flex-column > .date {
     font-size: 11px;
 }
 
-.body-text p {
+.body-text > p {
     margin-top: 30px;
 }
 
