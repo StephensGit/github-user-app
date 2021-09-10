@@ -58,6 +58,18 @@ const updateUI = (user) => {
     `
 }
 
+const displayError = () => {
+    newUser.innerHTML = ``;
+    newUser.innerHTML = `
+    <div class="header flex-row">
+        <div class="flex-column">
+            <h3>No results found!</h3>
+            <p class="user-handle">Please search again.</p>
+        </div>
+    </div>
+    `
+}
+
 form.addEventListener('submit', e => {
     // prevent default action
     e.preventDefault();
