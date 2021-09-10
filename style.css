@@ -184,6 +184,10 @@ section {
   border-radius: 50%;
 }
 
+.wordbreak {
+  word-break: break-all;
+}
+
 section .header .flex-column > .user-handle {
     color: var(--blue)
 }
