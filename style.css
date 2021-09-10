@@ -176,6 +176,14 @@ form button {
 section {
     padding: 20px;
 }
+
+.avatar {
+  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
 section .header .flex-column > .user-handle {
     color: var(--blue)
 }
