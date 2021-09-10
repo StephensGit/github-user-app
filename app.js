@@ -42,7 +42,7 @@ const updateUI = (user) => {
     <div class="footer flex-row">
         <ul class="flex-column">
             <div class="flex-row">
-                <a href=""><img src="/assets/icon-location.svg" alt=""></a><li>${user.location}</li>
+                <a href=""><img src="/assets/icon-location.svg" alt=""></a><li class="">${user.location}</li>
             </div>
             <div class="flex-row">
                 <a href=""><img src="./assets/icon-website.svg" alt=""></a><li>${user.blog}</li>
@@ -51,7 +51,7 @@ const updateUI = (user) => {
                 <a href=""><img src="./assets/icon-twitter.svg" alt=""></a><li>${user.twitter_username}</li> 
             </div>
             <div class="flex-row">
-                <a href=""><img src="./assets/icon-company.svg" alt=""></a><li>@${user.url}</li> 
+                <a href=""><img src="./assets/icon-company.svg" alt=""></a><li class="wordbreak">@${user.url}</li> 
             </div>
         </ul>
     </div>
