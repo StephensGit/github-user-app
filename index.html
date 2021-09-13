@@ -24,8 +24,10 @@
 
     <div class="wrapper">
       <form class="flex-row" action="">
-        <img class="search-icon" src="./assets/icon-search.svg" alt="search-icon">
-        <input placeholder="Search GitHub username..." type="text" name="user" id="search">
+        <div class="flex-row search-wrapper">
+          <img class="search-icon" src="./assets/icon-search.svg" alt="search-icon">
+          <input placeholder="Search GitHub username..." type="text" name="user" id="search">
+        </div>
         <button>Search</button>
       </form>
     </div>
@@ -59,20 +61,20 @@
         </div>
         <div class="footer flex-row">
           <ul class="flex-column">
-            <div class="flex-row">
-              <a href=""><img src="/assets/icon-location.svg" alt=""></a><li>San Francisco</li>
-            </div>
-            <div class="flex-row">
-              <a href=""><img src="./assets/icon-website.svg" alt=""></a><li>https://github.blog </li>
-            </div>
-            <div class="flex-row">
-              <a href=""><img src="./assets/icon-twitter.svg" alt=""></a><li>Twiiter</li> 
-            </div>
-            <div class="flex-row">
-              <a href=""><img src="./assets/icon-company.svg" alt=""></a><li>@github</li> 
-            </div>
+              <div class="flex-row">
+                  <a href=""><img src="/assets/icon-location.svg" alt=""></a><li class="">${user.location}</li>
+              </div>
+              <div class="flex-row">
+                  <a href=""><img src="./assets/icon-website.svg" alt=""></a><li>${user.name}</li>
+              </div>
+              <div class="flex-row">
+                  <a href=""><img src="./assets/icon-twitter.svg" alt=""></a><li>${user.twitter_username}</li> 
+              </div>
+              <div class="flex-row">
+                  <a href=""><img src="./assets/icon-company.svg" alt=""></a><li class="wordbreak">@${user.name}</li> 
+              </div>
           </ul>
-        </div>
+      </div>
       </section>
     </div>
   </div>
