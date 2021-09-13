@@ -24,7 +24,6 @@ Users should be able to:
 - Search for GitHub users by their username
 - See relevant user information based on their search
 - Switch between light and dark themes
-- Have the correct color scheme chosen for them based on their computer preferences. 
 
 ### Links
 
