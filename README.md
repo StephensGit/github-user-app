@@ -1,6 +1,6 @@
 # Frontend Mentor - GitHub user search app
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6).
 
 ## Table of contents
 
@@ -14,6 +14,7 @@ This is a solution to the [GitHub user search app challenge on Frontend Mentor](
 
 
 ## Overview
+This project uses the Github public API to allow users to search for Github users by their username. It's built with a mobile first workflow, encorporating HTML, CSS, CSS variables, Flexbox and Javascript. It also allows usrers to toggle between light/dark mode.
 
 ### The challenge
 
@@ -44,6 +45,7 @@ Users should be able to:
 - Mobile-first workflow
 - Flexbox
 - Javascript
+- Github API
 
 ## Author
 
