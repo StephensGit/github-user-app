@@ -26,6 +26,7 @@
     --main-font-color: #FEFEFE;
     --h1-color: #FEFEFE;
     --input-col: #FEFEFE;
+    --dark-hover-text:#2B3442;
 }
 
   body {
@@ -74,6 +75,10 @@
     color: var(--main-font-color);
   }
 
+  .dark-toggle {
+    color: #2B3442;
+  }
+  
   .light-toggle-icon {
       margin-left: 20px;
       width: 20px;
@@ -123,14 +128,14 @@
     line-height: 25px;
   }
 
-  .repo-info {
-    background: var(--main-bg);
+  a {
+    color: var(--main-font-color);
+    text-decoration: none;
   }
 
-  .footer ul {
-    list-style-type: none;
+  a:hover {
+    text-decoration: underline;
   }
-
 /* FORM */
 form {
     justify-content: space-between;
@@ -173,6 +178,12 @@ form button {
     width: 84px;
     font-family: var(--main-font);
     margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+form button:hover {
+  background: var(--blue);
+  opacity: 0.8;
 }
 
 /* Section Header */
@@ -225,6 +236,7 @@ section .header .flex-column > .date {
     padding: 20px;
     margin-top: 20px;
     justify-content: space-around;
+    background: var(--main-bg);
 }
 
 .repo-info > div > p {
@@ -250,6 +262,10 @@ section .footer {
     margin-top: 20px;
 }
 
+.footer ul {
+  list-style-type: none;
+}
+
 .footer .flex-column > .flex-row {
     align-content: center;
 }
@@ -258,11 +274,18 @@ section .footer {
     margin: 0 0 20px 20px;
 }
 
+.twitter-icon {
+  width: 20px;
+  height: 16px;
+}
+
+.website-icon {
+  width: 20px;
+  height: 20px;
+}
+
 /* Tablet Design */
 @media screen and (min-width: 573px) {
-  body {
-    background: red;
-  }
   .search-wrapper {
     justify-content: flex-start;
   }
@@ -310,7 +333,6 @@ section .footer {
 /* Desktop Design */
 @media screen and (min-width: 730px) {
   body {
-    background: green;
     max-width: 730px;
   }
   section > .section-flex-row-desktop {
