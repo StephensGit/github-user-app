@@ -26,14 +26,15 @@ Users should be able to:
 - Switch between light and dark themes
 - Have the correct color scheme chosen for them based on their computer preferences. 
 
-### Screenshot
-
-![](./screenshot.jpg)
-
-
 ### Links
 
-- Live Site URL: 
+- Live Site URL: (https://stephen-moran-github-user-search.netlify.app/)
+
+
+### Screenshot
+
+![github-user-search-desktop](https://user-images.githubusercontent.com/45046901/133157173-22f8314f-ed3c-4c56-a64f-a65eff538f80.png)
+
 
 ## My process
 
@@ -44,7 +45,6 @@ Users should be able to:
 - Mobile-first workflow
 - Flexbox
 - Javascript
-- Local Storage
 
 ## Author
 
