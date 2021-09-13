@@ -1,11 +1,47 @@
-const githubUser = new Github();
 const theme_toggler = document.querySelector('#theme_toggler');
+const toggle_icon = document.querySelector('.light-toggle-icon');
+const light = document.querySelector('.light-toggle');
+const dark = document.querySelector('.dark-toggle');
+
 const form = document.querySelector('form');
+const githubUser = new Github();
 const newUser = document.querySelector('section');
+
+const toggle_Icon_Check = toggle_icon.getAttribute("src");
+let toggle_Icon_Check_Value = '';
+
+// toggle_icon.addEventListener('mouseover', () => {
+//     if(toggle_Icon_Check === "./assets/icon-moon.svg") {
+//         light.classList.add('dark-toggle');
+//         toggle_icon.setAttribute("src","./assets/icon-moon-dark.svg");
+//     } 
+//     else if (toggle_Icon_Check === "./assets/icon-sun.svg"){ 
+//         toggle_icon.setAttribute("src","./assets/icon-sun-dark.svg");
+//     } 
+// })
+
+// toggle_icon.addEventListener('mouseout', () => {
+//     light.classList.remove('dark-toggle');
+//     if(toggle_Icon_Check === "./assets/icon-sun.svg") {
+//         console.log("out");
+//         toggle_icon.setAttribute("src","./assets/icon-sun-dark.svg");
+//     } 
+//     else if(toggle_Icon_Check === "./assets/icon-moon-dark.svg") {
+//         console.log("out");
+//         toggle_icon.setAttribute("src","./assets/icon-moon.svg");
+//     } 
+//     else {
+//         toggle_icon.setAttribute("src","./assets/icon-moon.svg")
+//     }
+// })
 
 theme_toggler.addEventListener('click', () => {
     document.body.classList.toggle('dark_mode');
-    console.log("dark mode");
+    if(document.body.classList.contains('dark_mode')){
+        toggle_icon.setAttribute("src","./assets/icon-sun.svg");
+    } else {
+        toggle_icon.setAttribute("src","./assets/icon-moon.svg")
+    }
 })
 
 const updateUI = (user) => {
@@ -48,12 +84,12 @@ const updateUI = (user) => {
                             <a href=""><img src="/assets/icon-location.svg" alt=""></a><li class="">${user.location}</li>
                         </div>
                         <div class="flex-row">
-                            <a href=""><img src="./assets/icon-website.svg" alt=""></a><li>${user.blog}</li>
+                        <a class="flex-row" href="${user.blog}"><img class="website-icon" src="./assets/icon-website.svg" alt=""><li>${user.blog}</li></a>
                         </div>
                     </div>
                     <div class="flex-column">
-                        <div class="flex-row">
-                            <a href=""><img src="./assets/icon-twitter.svg" alt=""></a><li>${user.twitter_username}</li> 
+                        <div class="flex-row ">
+                            <a href=""><img class="twitter-icon" src="./assets/icon-twitter.svg" alt=""></a><li>${user.twitter_username}</li>
                         </div>
                         <div class="flex-row">
                             <a href=""><img src="./assets/icon-company.svg" alt=""></a><li class="wordbreak">@${user.company}</li> 
