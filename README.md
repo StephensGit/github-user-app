@@ -45,6 +45,7 @@ Users should be able to:
 - Mobile-first workflow
 - Flexbox
 - Javascript
+- ES6 Classes
 - Github API
 
 ## Author
