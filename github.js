@@ -1,6 +1,6 @@
 class Github {
     constructor(){
-      this.user = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+      this.user = '';
     }
 
     async getUser(user){
